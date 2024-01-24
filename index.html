@@ -4,51 +4,221 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing page</title>
+    <title>Golf</title>
+
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--ggl font manrope-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
-    <script>
-        // custom-color
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
-                    }
-                }
-            }
-        }
-    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
     <style>
         .font-manrope {
-            font-family: 'Manrope', sans-serif;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
     </style>
-
 </head>
 
-<body class="font-manrope ml-auto mr-auto">
+<body>
     <header>
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li class="text-orange-500"><a>Home</a></li>
+
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-4xl lg:ml-16">Hockey<span class="text-orange-600">'</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li class="text-orange-500 font-bold"><a>Home</a></li>
+
+                        <li class="font-bold"><a>About</a></li>
+                        <li class="font-bold"><a>Pages</a></li>
+                        <li class="font-bold"><a>Blog</a></li>
+                        <li class="font-bold"><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn bg-orange-500 text-white lg:mr-20">Get Ticket</a>
+                </div>
+            </div>
+
+        </nav>
+        <div class="mt-10">
+            <div class="carousel ml-20">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="Images/2.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
 
     </header>
     <main>
-        <div class="text-center">
-            <h3 class="text-2xl lg:text-4xl text-center  w-80 h-12 ml-auto mr-auto text-black">Our New Produts</h3>
-            <p class="w-45 lg:w-60% h-25 text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Incidunt odit
-                dicta laboriosam quidem hic minus!</p>
-        </div>
-        <!-- pic-flex -->
-        <div class=" grid grid-cols-1 lg:grid-cols-2 items-center pl-5 lg:ml-auto mr-auto lg:pl-20">
-            <div
-                class="grid grid-cols-1 lg:grid-cols-2 mt-8 w-25 lg:w-55 h-65 bg-white rounded-2xl pl-2 ml-auto mr-auto lg:pl-6 lg:mr-2 shadow">
-                <div>
-                    <img class="w-50 h-35 pt-2 pr-2" src="Images/5.png" alt="">
+        <!--Percentage-->
+        <section>
+
+            <div class="mt-32 text-center">
+                <h1 class="font-bold text-4xl">Professional Hockeys Club</h1>
+                <p>This hockey club have some very experienced members and staffs</p>
+            </div>
+            <div class=" grid gap-5 grid-cols-1 lg:grid-cols-4 justify-between py-20 px-36">
+
+
+                <div><svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
+                        <path
+                            d="M120 60C120 93.1371 93.1371 120 60 120C26.8629 120 0 93.1371 0 60C0 26.8629 26.8629 0 60 0C93.1371 0 120 26.8629 120 60ZM11.469 60C11.469 86.8029 33.1971 108.531 60 108.531C86.8029 108.531 108.531 86.8029 108.531 60C108.531 33.1971 86.8029 11.469 60 11.469C33.1971 11.469 11.469 33.1971 11.469 60Z"
+                            fill="#E7E7E8" />
+                        <path
+                            d="M114.266 60C117.433 60 120.028 57.4265 119.726 54.2739C118.63 42.8387 114.268 31.914 107.102 22.8328C98.7478 12.2455 87.0702 4.78141 73.9534 1.64503C60.8366 -1.49135 47.0457 -0.117159 34.8058 5.54589C22.5658 11.2089 12.5907 20.8306 6.48991 32.8583C0.389129 44.8861 -1.48153 58.6185 1.17978 71.8398C3.84108 85.0612 10.8791 97.0004 21.1583 105.731C31.4376 114.462 44.3584 119.475 57.8362 119.961C69.3965 120.378 80.7882 117.444 90.6624 111.574C93.3847 109.955 93.9276 106.34 92.0567 103.785C90.1858 101.229 86.611 100.708 83.8529 102.265C76.0892 106.646 67.2324 108.824 58.2498 108.499C47.3483 108.106 36.8973 104.051 28.5829 96.9895C20.2686 89.9277 14.5759 80.2707 12.4233 69.5766C10.2707 58.8826 11.7837 47.7751 16.7184 38.0465C21.653 28.3178 29.7213 20.5354 39.6216 15.9548C49.5219 11.3742 60.6767 10.2627 71.2862 12.7996C81.8957 15.3364 91.3411 21.3737 98.0985 29.9373C103.666 36.9936 107.142 45.426 108.193 54.2786C108.566 57.4236 111.098 60 114.266 60Z"
+                            fill="#FF4240" />
+                    </svg>
+                    <h1 class="mt-4 text-2xl">Prayer Facility</h1>
+                    <p>Most of the<br>
+                        people can pray<br>
+                        according to their religion </p>
                 </div>
-                <div class="block ">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
+                        <path
+                            d="M120 60C120 93.1371 93.1371 120 60 120C26.8629 120 0 93.1371 0 60C0 26.8629 26.8629 0 60 0C93.1371 0 120 26.8629 120 60ZM11.469 60C11.469 86.8029 33.1971 108.531 60 108.531C86.8029 108.531 108.531 86.8029 108.531 60C108.531 33.1971 86.8029 11.469 60 11.469C33.1971 11.469 11.469 33.1971 11.469 60Z"
+                            fill="#E7E7E8" />
+                        <path
+                            d="M114.266 60C117.433 60 120.028 57.4266 119.726 54.274C118.506 41.5436 113.241 29.4793 104.626 19.8933C94.7273 8.87961 81.1057 1.91535 66.3817 0.340346C51.6576 -1.23466 36.8712 2.69086 24.8672 11.3617C12.8632 20.0325 4.48966 32.836 1.35752 47.3091C-1.77461 61.7821 0.55594 76.9021 7.90081 89.7603C15.2457 102.618 27.086 112.306 41.1438 116.96C55.2016 121.614 70.4837 120.905 84.0501 114.969C95.858 109.803 105.64 100.995 112.015 89.9081C113.593 87.1625 112.294 83.7461 109.41 82.4366C106.526 81.1272 103.155 82.426 101.515 85.1352C96.3546 93.6587 88.6662 100.431 79.4529 104.462C68.4798 109.263 56.1188 109.836 44.7481 106.072C33.3775 102.308 23.8005 94.4719 17.8596 84.0716C11.9187 73.6713 10.0336 61.4414 12.567 49.7349C15.1005 38.0284 21.8734 27.6723 31.5828 20.6589C41.2923 13.6455 53.2523 10.4704 65.1618 11.7443C77.0714 13.0182 88.0892 18.6513 96.0955 27.5597C102.818 35.0393 107.018 44.3841 108.193 54.2786C108.566 57.4236 111.098 60 114.266 60Z"
+                            fill="#49D293" />
+                    </svg>
+                    <h1 class="mt-4 text-2xl">Experienced Coach</h1>
+                    <p>AExperienced guides.<br>
+                       here the coaches are<br>
+                        very experienced </p>
+
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
+                        <path
+                            d="M120 60C120 93.1371 93.1371 120 60 120C26.8629 120 093.1371 0 60C0 26.8629 26.8629 0 60 0C93.1371 0 120 26.8629 120 60ZM11.469 60C11.469 86.8029 33.1971 108.531 60 108.531C86.8029 108.531 108.531 86.8029 108.531 60C108.531 33.1971 86.8029 11.469 60 11.469C33.1971 11.469 11.469 33.1971 11.469 60Z"
+                            fill="#E7E7E8" />
+                        <path
+                            d="M110.134 80.7677C113.06 81.9797 116.443 80.5956 117.371 77.5673C120.973 65.8033 120.885 53.165 117.038 41.3814C112.596 27.7733 103.435 16.2017 91.2094 8.75578C78.9837 1.30986 64.4986 -1.51971 50.3695 0.777937C36.2403 3.07558 23.3982 10.349 14.1616 21.2851C4.92507 32.2212 -0.0972474 46.0992 0.00142546 60.4136C0.100098 74.728 5.31326 88.5355 14.6997 99.3431C24.0862 110.151 37.0273 117.247 51.1868 119.349C63.4479 121.17 75.9229 119.143 86.9184 113.623C89.7488 112.202 90.5474 108.635 88.8628 105.953C87.1783 103.271 83.6496 102.497 80.7878 103.854C72.1379 107.954 62.4244 109.423 52.8714 108.005C41.4186 106.304 30.9511 100.565 23.3589 91.8227C15.7666 83.0809 11.55 71.9127 11.4702 60.3345C11.3903 48.7563 15.4526 37.5311 22.9236 28.6854C30.3946 19.8398 40.782 13.9567 52.2103 12.0982C63.6387 10.2398 75.3549 12.5285 85.2438 18.5511C95.1326 24.5737 102.542 33.9334 106.135 44.9403C109.132 54.1213 109.309 63.9437 106.713 73.1577C105.855 76.2061 107.208 79.5556 110.134 80.7677Z"
+                            fill="#FFB546" />
+                    </svg>
+                    <h1 class="mt-4 text-2xl">Senior Player</h1>
+                    <p>Arounf maximum's <br>
+                        are senior<br>
+                        neutral player </p>
+
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
+                        <path
+                            d="M120 60C120 93.1371 93.1371 120 60 120C26.8629 120 0 93.1371 0 60C0 26.8629 26.8629 0 60 0C93.1371 0 120 26.8629 120 60ZM11.469 60C11.469 86.8029 33.1971 108.531 60 108.531C86.8029 108.531 108.531 86.8029 108.531 60C108.531 33.1971 86.8029 11.469 60 11.469C33.1971 11.469 11.469 33.1971 11.469 60Z"
+                            fill="#E7E7E8" />
+                        <path
+                            d="M114.266 60C117.433 60 120.028 57.4265 119.726 54.2739C118.63 42.8387 114.268 31.914 107.102 22.8328C98.7478 12.2455 87.0702 4.78141 73.9534 1.64503C60.8366 -1.49135 47.0457 -0.117159 34.8058 5.54589C22.5658 11.2089 12.5907 20.8306 6.48991 32.8583C0.389129 44.8861 -1.48153 58.6185 1.17978 71.8398C3.84108 85.0612 10.8791 97.0004 21.1583 105.731C31.4376 114.462 44.3584 119.475 57.8362 119.961C69.3965 120.378 80.7882 117.444 90.6624 111.574C93.3847 109.955 93.9276 106.34 92.0567 103.785C90.1858 101.229 86.611 100.708 83.8529 102.265C76.0892 106.646 67.2324 108.824 58.2498 108.499C47.3483 108.106 36.8973 104.051 28.5829 96.9895C20.2686 89.9277 14.5759 80.2707 12.4233 69.5766C10.2707 58.8826 11.7837 47.7751 16.7184 38.0465C21.653 28.3178 29.7213 20.5354 39.6216 15.9548C49.5219 11.3742 60.6767 10.2627 71.2862 12.7996C81.8957 15.3364 91.3411 21.3737 98.0985 29.9373C103.666 36.9936 107.142 45.426 108.193 54.2786C108.566 57.4236 111.098 60 114.266 60Z"
+                            fill="#4C8DF1" />
+                    </svg>
+                    <h1 class="mt-4 text-2xl">Training Ground</h1>
+                    <p>Highly recommended.<br>
+                        Training ground<br>
+                        is here</p>
+
+                </div>
+            </div>
+
+
+        </section>
+        <!--Program Section-->
+        <section>
+            <div class="text-center border border-slate-200 p-8">
+                <h1 class="font-bold text-4xl">Program Section</h1>
+                <p>There are various types of program
+                    </p>
+            </div>
+
+        </section>
+        <!--Program Section Pic-->
+        <section>
+
+            <div class="grid lg:grid-cols-2">
+                <div class="bg-cover lg:w-10/12 h-80 mx-20 my-10 rounded-lg"
+                    style="background-image: url(Images/2.png);">
+                    <h3 class="w-53 h-10 text-2xl font-extrabold mx-4 lg:pt-20 lg:px-10 text-white">Junior Program</h3>
+                    <p class="w-8/12 h-20 px-4 lg:mt-10 lg:px-10 text-white">
+                       This program is for adults</p>
+                    <button
+                        class=" bg-orange-500 w-52 h-10 text-l rounded-md ml-4 mt-24 lg:mt-9 lg:ml-10 text-white">Register
+                        Now</button>
+                </div>
+
+
+
+                <div class="bg-cover lg:w-10/12 h-80 mx-20 my-10 rounded-lg"
+                    style="background-image: url(Images/3.png);">
+                    <h3 class="w-53 h-10 text-2xl font-extrabold mx-4 lg:pt-20 lg:px-10 text-white">Teenager Program
+                    </h3>
+                    <p class="w-8/12 h-20 px-4 lg:mt-10 lg:px-10 text-white">This program is for teenagers
+                        </p>
+                    <button
+                        class=" bg-orange-500 w-52 h-10 text-l rounded-md ml-4 mt-24 lg:mt-9 lg:ml-10 text-white">Register
+                        Now</button>
+                </div>
+
+            </div>
+            <div class="bg-cover lg:w-11/12 h-96 mx-20 my-10 rounded-lg" style="background-image: url(Images/4.png);">
+                <h3 class="w-53 h-10 text-2xl font-extrabold mx-4 lg:pt-40 lg:px-10 text-white">Professional Program
+                </h3>
+                <p class="w-8/12 h-20 px-4 lg:pt-8 lg:px-10 text-white">This program is for adults
+                    </p>
+                <button
+                    class=" bg-orange-500 w-52 h-10 text-l rounded-md ml-4 mt-24 lg:mt-9 lg:ml-10 text-white">Register
+                    Now</button>
+
+            </div>
+        </section>
+        <!--Our New Product-->
+        <section>
+            <div class="text-center border border-slate-200 p-8">
+                <h1 class="font-bold text-4xl">OUR NEW PRODUCT</h1>
+                <p>
+                    These products are the most famous one</p>
+            </div>
+
+        </section>
+        <!--Card-->
+        <section class="grid gap-2 grid-cols-1 lg:grid-cols-2 lg:py-20 lg:px-36">
+            <div class="card card-side bg-base-100 shadow-xl">
+                <figure><img src="Images/5.png" alt="Movie" /></figure>
+                <div class="card-body">
+
                     <div class="flex">
                         <div class="flex mr-2 mt-3">
                             <img class="w-6 h-6" src="Images/star.jpg" alt="">
@@ -64,24 +234,20 @@
                         </div>
 
                     </div>
-                    <h3 class="w-60 h-7 font-extrabold mt-3">World cup flags football</h3>
-                    <p class="w-75 h-13 font-medium text-base mt-3">Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit.</p>
-                    <div class="flex mr-2">
-                        <p class="w-31 h-7 font-extrabold mt-3 text-orange-600">Price-$22.00</p>
-                        <div class="flex mt-3">
-                            <img class="w-6 h-6 pl-2" src="Images/cart.png" alt="">
-                            <p class="w-34 h-6 font-medium text-base">Delivery fee:free</p>
-                        </div>
+
+                    <h2 class="card-title">World Cup Flags Football</h2>
+                    <p>Click the button to buy on amazon.</p>
+                    <div class="flex ">
+                        <h1 class="font-bold text-red-500">Price-$22.00</h1>
+                        <p class="ml-12">Delivery Fee:Free</p>
                     </div>
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 mt-8 w-55%  bg-white rounded-2xl ml-2 pl-6 shadow">
-                <div>
-                    <img class="w-50 h-35 pt-2 pr-2" src="Images/6.png" alt="">
-                </div>
-                <div class="block ml-6">
+            <div class="card  card-side bg-base-100 shadow-xl">
+                <figure><img src="Images/6.png" alt="Movie" /></figure>
+                <div class="card-body">
+
                     <div class="flex">
                         <div class="flex mr-2 mt-3">
                             <img class="w-6 h-6" src="Images/star.jpg" alt="">
@@ -97,25 +263,20 @@
                         </div>
 
                     </div>
-                    <h3 class="w-60 h-7 font-extrabold mt-3">World cup flags football</h3>
-                    <p class="w-75 h-13 font-medium text-base mt-3">Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit.</p>
-                    <div class="flex mr-2">
-                        <p class="w-31 h-7 font-extrabold mt-3 text-orange-600">Price-$22.00</p>
-                        <div class="flex mt-3">
-                            <img class="w-6 h-6 pl-2" src="Images/cart.png" alt="">
-                            <p class="w-34 h-6 font-medium text-base">Delivery fee:free</p>
-                        </div>
+
+                    <h2 class="card-title">World Cup Flags Football</h2>
+                    <p>Click the button to buy on amazon.</p>
+                    <div class="flex ">
+                        <h1 class="font-bold text-red-500">Price-$22.00</h1>
+                        <p class="ml-12">Delivery Fee:Free</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="grid grid-cols-1 lg:grid-cols-2 items-center ml-auto mr-auto pl-20">
-            <div class="grid grid-cols-1 lg:grid-cols-2 mt-8 w-55% h-55 bg-white rounded-2xl pl-6 mr-2 shadow">
-                <div>
-                    <img class="w-50 h-35 pt-2 pr-2" src="Images/7.png" alt="">
-                </div>
-                <div class="block ml-6">
+
+            <div class="card  card-side bg-base-100 shadow-xl">
+                <figure><img src="Images/7.png" alt="Movie" /></figure>
+                <div class="card-body">
+
                     <div class="flex">
                         <div class="flex mr-2 mt-3">
                             <img class="w-6 h-6" src="Images/star.jpg" alt="">
@@ -131,24 +292,20 @@
                         </div>
 
                     </div>
-                    <h3 class="w-60 h-7 font-extrabold mt-3">World cup flags football</h3>
-                    <p class="w-75 h-13 font-medium text-base mt-3">Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit.</p>
-                    <div class="flex mr-2">
-                        <p class="w-31 h-7 font-extrabold mt-3 text-orange-600">Price-$22.00</p>
-                        <div class="flex mt-3">
-                            <img class="w-6 h-6 pl-2" src="Images/cart.png" alt="">
-                            <p class="w-34 h-6 font-medium text-base">Delivery fee:free</p>
-                        </div>
+
+                    <h2 class="card-title">Cap For Hockeys</h2>
+                    <p>Click the button to buy on amazon.</p>
+                    <div class="flex ">
+                        <h1 class="font-bold text-red-500">Price-$22.00</h1>
+                        <p class="ml-12">Delivery Fee:Free</p>
                     </div>
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 mt-8 w-55%  bg-white rounded-2xl ml-2 pl-6 shadow">
-                <div>
-                    <img class="w-50 h-35 pt-2 pr-2" src="Images/8.png" alt="">
-                </div>
-                <div class="block ml-6">
+            <div class="card  card-side bg-base-100 shadow-xl">
+                <figure><img src="Images/8.png" alt="Movie" /></figure>
+                <div class="card-body">
+
                     <div class="flex">
                         <div class="flex mr-2 mt-3">
                             <img class="w-6 h-6" src="Images/star.jpg" alt="">
@@ -164,25 +321,19 @@
                         </div>
 
                     </div>
-                    <h3 class="w-60 h-7 font-extrabold mt-3">World cup flags football</h3>
-                    <p class="w-75 h-13 font-medium text-base mt-3">Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit.</p>
-                    <div class="flex mr-2">
-                        <p class="w-31 h-7 font-extrabold mt-3 text-orange-600">Price-$22.00</p>
-                        <div class="flex mt-3">
-                            <img class="w-6 h-6 pl-2" src="Images/cart.png" alt="">
-                            <p class="w-34 h-6 font-medium text-base">Delivery fee:free</p>
-                        </div>
+
+                    <h2 class="card-title">World Cup Flags Football</h2>
+                    <p>Click the button to buy on amazon.</p>
+                    <div class="flex ">
+                        <h1 class="font-bold text-red-500">Price-$22.00</h1>
+                        <p class="ml-12">Delivery Fee:Free</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="grid grid-cols-1 lg:grid-cols-2  items-center ml-auto mr-auto pl-20">
-            <div class="grid grid-cols-1 lg:grid-cols-2 mt-8 w-55% h-55 bg-white rounded-2xl pl-6 mr-2 shadow">
-                <div>
-                    <img class="w-50 h-35 pt-2 pr-2" src="Images/9.png" alt="">
-                </div>
-                <div class="block ml-6">
+
+            <div class="card  card-side bg-base-100 shadow-xl">
+                <figure><img src="Images/9.png" alt="Movie" /></figure>
+                <div class="card-body">
                     <div class="flex">
                         <div class="flex mr-2 mt-3">
                             <img class="w-6 h-6" src="Images/star.jpg" alt="">
@@ -198,24 +349,19 @@
                         </div>
 
                     </div>
-                    <h3 class="w-60 h-7 font-extrabold mt-3">World cup flags football</h3>
-                    <p class="w-75 h-13 font-medium text-base mt-3">Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit.</p>
-                    <div class="flex mr-2">
-                        <p class="w-31 h-7 font-extrabold mt-3 text-orange-600">Price-$22.00</p>
-                        <div class="flex mt-3">
-                            <img class="w-6 h-6 pl-2" src="Images/cart.png" alt="">
-                            <p class="w-34 h-6 font-medium text-base">Delivery fee:free</p>
-                        </div>
+                    <h2 class="card-title">World Cup Flags Football</h2>
+                    <p>Click the button to buy on amazon.</p>
+                    <div class="flex ">
+                        <h1 class="font-bold text-red-500">Price-$22.00</h1>
+                        <p class="ml-12">Delivery Fee:Free</p>
                     </div>
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 mt-8 w-55%  bg-white rounded-2xl ml-2 pl-6 shadow">
-                <div>
-                    <img class="w-50 h-35 pt-2 pr-2" src="Images/10.png" alt="">
-                </div>
-                <div class="block ml-6">
+            <div class="card  card-side bg-base-100 shadow-xl">
+                <figure><img src="Images/10.png" alt="Movie" /></figure>
+                <div class="card-body">
+
                     <div class="flex">
                         <div class="flex mr-2 mt-3">
                             <img class="w-6 h-6" src="Images/star.jpg" alt="">
@@ -231,49 +377,216 @@
                         </div>
 
                     </div>
-                    <h3 class="w-60 h-7 font-extrabold mt-3">World cup flags football</h3>
-                    <p class="w-75 h-13 font-medium text-base mt-3">Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit.</p>
-                    <div class="flex mr-2">
-                        <p class="w-31 h-7 font-extrabold mt-3 text-orange-600">Price-$22.00</p>
-                        <div class="flex mt-3">
-                            <img class="w-6 h-6 pl-2" src="Images/cart.png" alt="">
-                            <p class="w-34 h-6 font-medium text-base">Delivery fee:free</p>
-                        </div>
+
+                    <h2 class="card-title">World Cup Flags Football</h2>
+                    <p>Click the button to buy on amazon.</p>
+                    <div class="flex ">
+                        <h1 class="font-bold text-red-500">Price-$22.00</h1>
+                        <p class="ml-12">Delivery Fee:Free</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- players -->
-        <div class="grid grid-cols-2">
-            <div class="bg-cover w-10/12 h-80 mx-20 my-10 rounded-lg" style="background-image: url(Images/2.png);">
-                <h3 class="w-53 h-10 text-2xl font-extrabold pt-20 px-10">Junior Program</h3>
-                <p class="w-8/12 h-20 mt-10 px-10">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem nihil
-                    quo architecto dolorem quaerat libero similique nostrum repudiandae aliquam vel!</p>
-                <button class=" bg-orange-500 w-52 h-10 text-l rounded-md mt-9 ml-10">Register Now</button>
+
+        </section>
+        <!--Clients Question-->
+        <section>
+            <div>
+
+                <div class="text-center border border-slate-200 p-8">
+                    <h1 class="font-bold text-4xl">Clients Question</h1>
+                    <p>If you have any queries then feel free to read these blogs
+                        </p>
+                </div>
+
             </div>
 
 
-
-            <div class="bg-cover w-10/12 h-80 mx-20 my-10 rounded-lg" style="background-image: url(Images/3.png);">
-                <h3 class="w-53 h-10 text-2xl font-extrabold pt-20 px-10">Teenager Program</h3>
-                <p class="w-8/12 h-20 mt-10 px-10">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem nihil
-                    quo architecto dolorem quaerat libero similique nostrum repudiandae aliquam vel!</p>
-                <button class=" bg-orange-500 w-52 h-10 text-l rounded-md mt-9 ml-10">Register Now</button>
+        </section>
+        <!--Question Pic-->
+        <section class="lg:flex py-20 px-36 gap-10 lg:ml-64">
+            <div class="">
+                <img src="Images/11.png" alt="">
             </div>
 
-        </div>
-        <div class="bg-cover w-11/12 h-96 mx-20 my-10 rounded-lg"
-         style="background-image: url(Images/4.png);">
-         <h3 class="w-53 h-10 text-2xl font-extrabold pt-40 px-10">Professional  Program</h3>
-                <p class="w-8/12 h-20 pt-8 px-10">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem nihil
-                    quo architecto dolorem quaerat libero similique nostrum repudiandae aliquam vel!</p>
-                <button class=" bg-orange-500 w-52 h-10 text-l rounded-md mt-8 ml-10">Register Now</button>
+            <div>
+                <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-200">
+                    <div class="collapse-title text-xl font-medium py-10">
+                        Our Equipment
+                    </div>
+                    <div class="collapse-content">
+                        <p>We have expensive equipments</p>
+                    </div>
+                </div>
+                <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-200">
+                    <div class="collapse-title text-xl font-medium">
+                        Hockey Training
+                    </div>
+                    <div class="collapse-content">
+                        <p>Daily training is possible</p>
+                    </div>
+                </div>
+                <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-200">
+                    <div class="collapse-title text-xl font-medium">
+                        Private Lessons
+                    </div>
+                    <div class="collapse-content">
+                        <p>private lesson is possible</p>
+                    </div>
+                </div>
+                <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-200">
+                    <div class="collapse-title text-xl font-medium">
+                        Ski Touring
+                    </div>
+                    <div class="collapse-content">
+                        <p>ski touring is also possible</p>
+                    </div>
+                </div>
+                <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-200">
+                    <div class="collapse-title text-xl font-medium">
+                        Booking
+                    </div>
+                    <div class="collapse-content">
+                        <p>Dpre order is also possible</p>
+                    </div>
+                </div>
 
-        </div>
+                <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-200">
+                    <div class="collapse-title text-xl font-medium">
+                        Pricings
+                    </div>
+                    <div class="collapse-content">
+                        <p>Discount is available</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!--Get In Touch-->
+        <section>
+            <div>
+                <div class="text-center border border-slate-200 p-8">
+                    <h1 class="font-bold text-4xl">Get In Touch</h1>
+                    <p>Call and message us on here</p>
+                </div>
+
+            </div>
+        </section>
+        <!--Phone & Email-->
+        <section class=" mt-8 py-20 px-36 lg:ml-52">
+            <div class="lg:flex gap-10">
+                <!--Phone-->
+                <div class="lg:border w-1/3 border-inherit rounded-lg lg:px-10 lg:py-10">
+                    <div class="mb-5 border bg-amber-100 w-56 lg:w-96 h-40 border-inherit rounded-lg">
+                        <img src="Images/Group 1171275317.png" alt="">
+                        <p>Phone Number</p>
+                        <p class="font-bold">(+62) 123-456-789</p>
+                    </div>
+                    <div class="mb-5 border bg-amber-100 w-56 lg:w-96 h-40 border-inherit rounded-lg">
+                        <img src="Images/Group 1171275318.png" alt="">
+                        <p>Email</p>
+                        <p class="font-bold">hockeys@support.com</p>
+                    </div>
+                    <div class="border bg-sky-100 w-56 lg:w-96 h-40 border-inherit rounded-lg">
+                        <img src="Images/Group 1171275321.png" alt="">
+                        <p>Location</p>
+                        <p class="font-bold">152/nouga jilla</p>
+
+                    </div>
+                </div>
+                <!--Email-->
+                <div>
+                    <div class="lg:flex gap-5">
+
+                        <div>
+                            <p class="font-bold">Your Name</p>
+                            <input class="p-2 bg-sky-100 rounded-lg" type="text" placeholder="Enter Your Full Name">
+                        </div>
+                        <div>
+                            <p class="font-bold">Your Name</p>
+                            <input class="p-2 bg-sky-100 rounded-lg" type="text" placeholder="Enter Your Full Name">
+
+                        </div>
+                    </div>
+                    <div class="lg:flex gap-5 mt-5">
+                        <div>
+                            <p class="font-bold">Your Name</p>
+                            <input class="p-2 bg-sky-100 rounded-lg" type="text" placeholder="Enter Your Full Name">
+                        </div>
+                        <div>
+                            <p class="font-bold">Your Name</p>
+                            <input class="p-2 bg-sky-100 rounded-lg" type="text" placeholder="Enter Your Full Name">
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <p class="font-bold">Message</p>
+                        <input class="w-full h-96 p-2 bg-sky-100 rounded-lg" type="text"
+                            placeholder="Write Your Message">
+
+                    </div>
+                    <div>
+                        <button class="bg-orange-600 w-full h-12 mt-5 bg-inherit rounded-lg text-white">Send
+                            Message</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        <section>
+
+        </section>
+        <!--Social Media-->
+        <section class="shadow rounded text-center pt-6 h-28 bg-slate-300 mx-32 my-4">
+            <h3 class="text-sm font-bold mb-4">Social Media</h3>
+            <div class="inline-flex">
+                <img class="w-6 h-6 mr-2" src="Images/Twitter.png" alt="">
+                <img class="w-6 h-6 mr-2" src="Images/fb.png" alt="">
+                <img class="w-6 h-6 mr-2" src="Images/insta.png" alt="">
+                <img class="w-6 h-6 mr-2" src="Images/github.png" alt="">
+            </div>
+        </section>
 
     </main>
+    <footer>
+        <footer class="footer p-10 bg-neutral text-neutral-content">
+
+            <nav>
+                <header class="footer-title">Get In Touch</header>
+                <p>here are our footer part</p>
+            </nav>
+
+
+            <nav>
+                <header class="footer-title">Company</header>
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Leadership</a>
+                <a class="link link-hover">Careers</a>
+                <a class="link link-hover">News & Article</a>
+                <a class="link link-hover">Legal Notice</a>
+            </nav>
+            <nav>
+                <header class="footer-title">Support</header>
+                <a class="link link-hover">Help Center</a>
+                <a class="link link-hover">FAQ</a>
+                <a class="link link-hover">Ticket Support</a>
+                <a class="link link-hover">Contact us</a>
+            </nav>
+
+            <nav>
+                <header class="footer-title">Services</header>
+                <a class="link link-hover">Academy</a>
+                <a class="link link-hover">Group Lesson</a>
+                <a class="link link-hover">Private Lesson</a>
+                <a class="link link-hover">Hockeys For Kids</a>
+                <a class="link link-hover">Hockeys For Adults</a>
+            </nav>
+        </footer>
+
+    </footer>
+
 </body>
 
 </html>

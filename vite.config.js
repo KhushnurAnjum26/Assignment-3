@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: "/Assignment_03/" 
-})
+  base: process.env.NODE_ENV === "production" ? "/Assignment_03/" : "/"
+});
